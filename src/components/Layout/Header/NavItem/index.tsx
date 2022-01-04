@@ -1,14 +1,35 @@
 import Link from 'next/link'
+import cn from 'classnames'
+import styles from './NavItem.module.css'
 
 interface Props {
   label: string
   href: string
+  fullWidth?: boolean
+  outlined?: boolean
+  textLink?: boolean
+  primary?: boolean
+  className?: string
 }
 
-const NavItem = ({ label, href = '/' }: Props) => {
+const NavItem = ({
+  label,
+  href = '/',
+  fullWidth,
+  outlined,
+  textLink,
+  primary,
+  className = '',
+}: Props) => {
   return (
     <Link href={href}>
-      <a className='text-heading-5 text-gray hover:text-primary-green font-sans font-bold'>
+      <a
+        className={cn((styles.text__Link, className), {
+          [styles.primary]: primary,
+          [styles.fullWidth]: fullWidth,
+          [styles.outlined]: outlined,
+        })}
+      >
         {label}
       </a>
     </Link>
