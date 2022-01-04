@@ -17,13 +17,6 @@ const NavBurger = () => {
             <NavItem href='/promotions' label='Promotions' />
             <NavItem href='/blogs' label='Blogs' />
             <NavItem href='/contact' label='Contact Us' />
-            <NavItem href='/login' label='Masuk' fullWidth outlined primary />
-            <NavItem
-              href='/register'
-              label='Daftar Sekarang'
-              fullWidth
-              primary
-            />
           </nav>
         </div>
       </button>
