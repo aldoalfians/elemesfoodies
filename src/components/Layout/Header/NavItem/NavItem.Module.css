@@ -1,0 +1,15 @@
+.text {
+  @apply text-heading-5 text-gray hover:text-primary-green font-sans font-bold;
+}
+
+.primary {
+  @apply bg-primary-green text-white py-2 px-4 h-[40px] text-heading-5 font-sans font-bold rounded-full;
+}
+
+.fullWidth {
+  @apply w-full;
+}
+
+.outlined {
+  @apply bg-light  text-dark;
+}

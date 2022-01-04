@@ -1,0 +1,31 @@
+.Card__section {
+  @apply absolute flex xl:bottom-8 p-3 lg:right-72 lg:bottom-8  xl:right-96  md:right-40 md:-bottom-64 sm:right-40 sm:-bottom-64;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+}
+
+@media (max-width: 400px) {
+  .Card__section {
+    right: 2rem;
+    bottom: -25rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .Card__section {
+    right: 5rem;
+    bottom: -21rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .Card__section {
+    right: 1rem;
+    bottom: -27rem;
+  }
+}

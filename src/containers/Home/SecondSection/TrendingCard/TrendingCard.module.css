@@ -1,0 +1,9 @@
+.List__Card {
+  @apply flex xl:w-[230px] lg:w-[230px] md:w-[230px] sm:w-auto  p-8 rounded-xl gap-1 mx-1 hover:drop-shadow-2xl;
+}
+
+@media (max-width: 800px) {
+  .List__Card {
+    width: 100%;
+  }
+}
