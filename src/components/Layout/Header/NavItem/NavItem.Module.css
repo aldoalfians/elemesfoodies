@@ -1,4 +1,4 @@
-.text {
+.textLink {
   @apply text-heading-5 text-gray hover:text-primary-green font-sans font-bold;
 }
 

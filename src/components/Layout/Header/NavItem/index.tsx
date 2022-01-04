@@ -7,7 +7,7 @@ interface Props {
   href: string
   fullWidth?: boolean
   outlined?: boolean
-  textLink?: string
+  textLink?: boolean
   primary?: boolean
   className?: string
 }
@@ -24,10 +24,11 @@ const NavItem = ({
   return (
     <Link href={href}>
       <a
-        className={cn((styles.text, className), {
+        className={cn((styles.textLink, className), {
           [styles.primary]: primary,
           [styles.fullWidth]: fullWidth,
           [styles.outlined]: outlined,
+          [styles.textLink]: textLink,
         })}
       >
         {label}
