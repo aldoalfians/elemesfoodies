@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build && next build --production && npm run start -- --port $PORT",
     "type-check": "tsc"
   },
   "dependencies": {
