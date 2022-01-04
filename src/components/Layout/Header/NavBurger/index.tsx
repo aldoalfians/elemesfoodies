@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Button from 'components/Button'
-
 import NavItem from '../NavItem'
 const NavBurger = () => {
   return (
